@@ -1,0 +1,68 @@
+
+.musiccontainer{
+    position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #FFFF00;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  place-items: center;
+}
+.arist{
+    
+    color: white;
+}
+.image{
+   width: 25rem;
+    height: 25rem;
+    margin-left: 20%;  
+    justify-content: center;
+    align-items: center;
+}
+.image img{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    object-fit: fill;
+    align-items: center;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0,0,0,0.4);
+}
+.audiocontroler{
+    display: flex;
+    font-size: large;
+    margin-top: -2rem;
+}
+.play,.prev,.next,.pause{
+    font-size: 3rem;
+    margin: 0 10px;
+
+}
+.play :hover{
+    color: green;
+}
+.pause :hover{
+    color: red;
+}
+.next :hover{
+    color: navy;
+}
+.prev :hover{
+    color: navy;
+}
+.anime{
+    animation: rotation 10s linear infinite;
+}
+@keyframes rotation{
+    from { transform: rotate(0deg);}
+    to{ transform: rotate(360deg);}
+}
+@media only screen and (max-width: 600px) {
+  .musiccontainer{
+    width: 80%;
+    left: 52%;
+  }
+  }
